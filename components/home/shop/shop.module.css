@@ -1,0 +1,15 @@
+.shop{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.text{
+    background: #F5F5F7;
+}
+.button{
+    color:black;
+}
+.shopCard{
+    margin-bottom: 20px;
+}

@@ -1,0 +1,18 @@
+.navbar{
+    /*padding-top: 20px;*/
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: solid 1px gray;
+    width: 90%;
+
+}
+.navbarGrid{
+    /*width: 100%;*/
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+
+}

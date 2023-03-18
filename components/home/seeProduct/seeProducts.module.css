@@ -1,0 +1,28 @@
+.product{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.productItemfirst{
+    background: black;
+    margin-bottom: 40px;
+    border-radius: 10px;
+
+}
+.productItemSecond{
+    background: linear-gradient(120deg, rgba(220,220,220,1) 12%,
+    rgba(186,186,186,1) 100%);
+    direction:rtl;
+    margin-bottom: 40px;
+    border-radius: 10px;
+
+}
+.productItemThird{
+    display: flex;
+    justify-content: space-between;
+
+}
+.productItemFourth{
+    direction:rtl;
+}

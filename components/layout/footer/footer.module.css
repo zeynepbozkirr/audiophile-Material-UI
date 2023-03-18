@@ -1,0 +1,64 @@
+.footer{
+    width: 90%;
+    display: flex;
+    background: black;
+    justify-content: center;
+    color: #fafafa;
+}
+
+.productsContainer{
+    /*height: 100px;*/
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.productsTypogTitle{
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+.productsName{
+    display: flex;
+    justify-content: space-between;
+}
+
+.descGrid{
+}
+.descTypog{
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.socialMedia{
+    display: flex;
+    justify-content: end;
+    font-size: 20px;
+}
+@media only screen and (min-width: 900px) {
+    .productsContainer{
+        height: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+.socialMedia{
+    justify-content: center;
+}
+    .productsName{
+        flex-direction: column;
+        align-items: center;
+    }
+    .productsTitle{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .typographyName{
+        margin-bottom: 20px;
+    }
+
+
+}

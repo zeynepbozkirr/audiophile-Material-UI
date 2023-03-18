@@ -1,0 +1,38 @@
+.home{
+    background: black ;
+    color: #fafafa;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+@media only screen and (max-width: 900px) and (min-width:600px){
+    .home{
+        padding-bottom: 100px;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .home{
+        padding-bottom: 250px;
+    }
+
+}
+
+.shop{
+    background: white ;
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-top: 80px;
+    padding-bottom: 80px;
+
+}
+.products{
+    background:white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+    color:#fafafa ;
+}
