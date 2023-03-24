@@ -1,0 +1,19 @@
+.payForm{
+    flex-direction: column;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 8%;
+
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+
+}
+.backButton{
+    margin-bottom: 20px;
+}

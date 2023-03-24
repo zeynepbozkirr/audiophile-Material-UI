@@ -1,0 +1,21 @@
+.check{
+    background: white;
+    display: flex;
+    justify-content: center;
+}
+.containergrid{
+    width: 90%;
+    margin:20px 0 40px 0;
+
+}
+
+.grid{
+    margin:20px 0 40px 0;
+}
+.textField{
+    width: 90%;
+    border:none !important;
+}
+.textField:active{
+    color: red !important;
+}

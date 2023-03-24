@@ -1,0 +1,40 @@
+.summary{
+    background: white;
+    display: flex;
+    justify-content: center;
+}
+.card{
+    border: none;
+    box-shadow: none;
+    width: 90%;
+    margin: 40px 0 40px 0;
+}
+.productGrid{
+    margin: 30px 0 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.image{
+    border-radius: 10px;
+}
+
+.payCard{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+
+}
+
+.payCardGarndTotal{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+}
+.pieceTypograpy{
+    color:black
+}
+.pieceGrandTotal{
+    color: #D97C49;
+}

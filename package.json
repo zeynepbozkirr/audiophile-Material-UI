@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "svgr":"svgr icons -d components/icons --icon --replace-attr-values \"#fff=currentColor\""
+    "svgr": "svgr icons -d components/icons --icon --replace-attr-values \"#fff=currentColor\""
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -19,7 +19,9 @@
     "next": "13.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-redux": "^8.0.5"
+    "react-image": "^4.1.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.9.0"
   },
   "devDependencies": {
     "@svgr/cli": "^6.5.1"

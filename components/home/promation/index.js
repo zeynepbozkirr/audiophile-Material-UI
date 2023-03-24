@@ -17,7 +17,8 @@ const PromationArea = () => {
           id={products.values[0].id}
           buttonTitle={"SEE PRODUCT"}
           color={"#D97C49"}
-        ></SeeProductButton>
+          cardType={"seeProduct"}
+        />
       </Grid>
       <Grid md={6}>
         <img src="img3.jpg" width="100%" height="100%" />

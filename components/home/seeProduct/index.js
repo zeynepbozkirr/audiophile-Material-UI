@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Grid from "@mui/material/Grid";
 import ProductCard from "../../shared/productCard";
 import styles from "./seeProducts.module.css";
 import SingleProductCard from "../../shared/productCard/singleProductCard";
 import { products } from "../../../data.json";
-const photo = ["img4.jpg", "img5.jpg", "ipad.png", "img1.jpg"];
+import { fetchProduct } from "../../../store/productSlice";
 
 const SeeProduct = () => {
   return (
@@ -16,6 +16,7 @@ const SeeProduct = () => {
           description={products.values[4].description}
           id={products.values[4].id}
           photo={products.values[4].image}
+          cardType={"seeProduct"}
         />
       </Grid>
       <Grid className={styles.productItemSecond}>
@@ -23,6 +24,7 @@ const SeeProduct = () => {
           name={products.values[5].name}
           id={products.values[5].id}
           photo={products.values[5].image}
+          cardType={"seeProduct"}
         />
       </Grid>
       <Grid container className={styles.productItemThird}>
@@ -37,7 +39,9 @@ const SeeProduct = () => {
         <Grid xs={12} sm={12} md={5.8}>
           <SingleProductCard
             color={"#F5F5F7"}
-            description={products.values[7].name}
+            id={products.values[6].id}
+            description={products.values[6].name}
+            cardType={"seeProduct"}
           />
         </Grid>
       </Grid>

@@ -26,7 +26,9 @@ const Navbar = () => {
         })}
 
         <Grid>
-          <ShoppingCartSvgrepoCom fill="white" />
+          <Link href={"/pay"}>
+            <ShoppingCartSvgrepoCom fill="white" />
+          </Link>
         </Grid>
       </Grid>
     </div>

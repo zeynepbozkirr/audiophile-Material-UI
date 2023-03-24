@@ -1,0 +1,14 @@
+.productDetail{
+    background: white;
+    color:black;
+}
+.backButton{
+    display: flex;
+    justify-content: center;
+}
+.product{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
