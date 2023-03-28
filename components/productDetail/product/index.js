@@ -1,52 +1,30 @@
 import React, { useEffect, useState } from "react";
-import { products } from "../../../data.json";
 import { useRouter } from "next/router";
 import styles from "./product.module.css";
-import facebook from "../../../icons/facebook.svg";
-import ProductCard from "../../shared/productCard";
-import Image from "next/image";
-import { Img } from "react-image";
-import { fetchProduct } from "../../../store/productSlice";
+import DoubleCard from "../../shared/productCard/doubleCard";
 import { useDispatch, useSelector } from "react-redux";
+import { addBasket } from "../../../store/productSlice";
+
 const Product = () => {
   const router = useRouter();
   const { id } = router.query;
-  const [product, setProduct] = useState();
-  const [loading, setLoading] = useState(true);
 
-  const fetching = async (id) => {
-    setLoading(true);
-    const item = await products.values.filter((x) => x.id == id);
-    setProduct(item);
-  };
-  const { productx } = useSelector((state) => state.product);
+  const basketProduct = useSelector((state) => state.product.basketProduct);
   const dispatch = useDispatch();
-  console.log(productx, "ppp");
+  const [count, setCount] = useState(0);
 
-  useEffect(() => {
-    if (id) {
-      fetching(id).then(() => setLoading(false));
-      console.log(product);
-      console.log(productx, "ppp");
-    }
-    // dispatch(fetchProduct(id));
-  }, [id]);
-
-  console.log();
-  return product ? (
+  return (
     <div className={styles.product}>
-      <ProductCard
-        photo={`../${product[0].image} `}
-        photoSize={400}
-        description={product[0].description}
-        name={product[0].name}
-        cardType={"addToCard"}
+      <DoubleCard
+        count={count}
+        setCount={setCount}
+        id={id}
+        photoSize={200}
+        type={"detail"}
         buttonTitle={"add to card"}
-        amount={4}
+        buttonFunc={() => dispatch(addBasket({ id: id, count: count }))}
       />
     </div>
-  ) : (
-    loading
   );
 };
 

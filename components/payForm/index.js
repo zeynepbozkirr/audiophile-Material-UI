@@ -12,10 +12,10 @@ const payForm = () => {
         <BackButton />
       </div>
       <Grid container className={styles.container}>
-        <Grid md={8}>
+        <Grid md={8} sm={12} xs={12}>
           <Checkout />
         </Grid>
-        <Grid md={3}>
+        <Grid md={3} sm={12} xs={12}>
           <Summary />
         </Grid>
       </Grid>

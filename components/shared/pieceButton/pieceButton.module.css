@@ -3,8 +3,6 @@
     flex-direction: row;
 }
 .buttonDec{
-    width: 1px;
-
     background: #F5F5F7;
     color: black !important;
     border: white;

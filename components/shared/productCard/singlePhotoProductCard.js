@@ -6,13 +6,7 @@ import SeeProductButton from "../button";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProduct } from "../../../store/productSlice";
 
-const SingleProductCard = ({
-  photo,
-
-  color,
-  cardType,
-  id,
-}) => {
+const SinglePhotoProductCard = ({ color, cardType, id }) => {
   const dispatch = useDispatch();
 
   const [state, setSate] = useState();
@@ -32,11 +26,11 @@ const SingleProductCard = ({
       className={styles.singleProduct}
       style={{ backgroundColor: color }}
     >
-      <Grid md={6} sm={12} className={styles.singleText}>
-        <SeeProductButton color={"#D97C49"} cardType={cardType} id={id} />
+      <Grid md={6} sm={12} className={styles.singlePhoto}>
+        <img src={state[0].image} width="200" />
       </Grid>
     </Grid>
   );
 };
 
-export default SingleProductCard;
+export default SinglePhotoProductCard;

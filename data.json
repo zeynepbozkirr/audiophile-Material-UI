@@ -7,7 +7,7 @@
           "id": 1,
           "name": "iPhone 12",
           "image": "iphone1.jfif",
-          "price": 2177.45,
+          "price": 2,
           "description": "2030 yılında tamamen karbon nötr olma çabalarımızın bir parçası olarak,  iPhon14 Pro ve iPhone 14 Pro Max, güç adaptörü veya EarPods ile sunulmamaktadır.",
           "stock": " 50"
         },
@@ -15,7 +15,7 @@
           "id": 4,
           "name": "iPad Pro",
           "image": "ipad1.jfif",
-          "price": 2177.45,
+          "price": 2,
           "description": "2030 yılında tamamen karbon nötr olma çabalarımızın bir parçası olarak,  iPhon14 Pro ve iPhone 14 Pro Max, güç adaptörü veya EarPods ile sunulmamaktadır. Kutuda USB-C güç adaptörleri ve bilgisayar bağlantı noktalarıyla uyumlu, hızlı şarj özelliğini destekleyen bir  USB-C -Lightning Kablosu bulunuyor.  Bu iPhone modelleriyle uyumlu olan mevcut USB-A - Lightning kablolarınızı, güç adaptörlerinizi ve kulaklıklarınızı kullanmaya devam etmenizi öneriyoruz. Ancak yeni bir Apple güç adaptörüne veya kulaklığa ihtiyacınız varsa bu aksesuarları satın alabilirsiniz.",
           "stock": " 50"
         },
@@ -23,7 +23,7 @@
           "id": 7,
           "name": "MacBook Air",
           "image": "mac3.jfif",
-          "price": 2177.45,
+          "price": 2,
           "description": "2030 yılında tamamen karbon nötr olma çabalarımızın bir parçası olarak,  iPhon14 Pro ve iPhone 14 Pro Max, güç adaptörü veya EarPods ile sunulmamaktadır. Kutuda USB-C güç adaptörleri ve bilgisayar bağlantı noktalarıyla uyumlu, hızlı şarj özelliğini destekleyen bir  USB-C -Lightning Kablosu bulunuyor.  Bu iPhone modelleriyle uyumlu olan mevcut USB-A - Lightning kablolarınızı, güç adaptörlerinizi ve kulaklıklarınızı kullanmaya devam etmenizi öneriyoruz. Ancak yeni bir Apple güç adaptörüne veya kulaklığa ihtiyacınız varsa bu aksesuarları satın alabilirsiniz.",
           "stock": " 50"
         },
@@ -32,14 +32,14 @@
           "id": 2,
           "name": "iPhone 13",
           "image": "iphone2.jfif",
-          "price": 2177.45,
+          "price": 2,
           "description": "2030 yılında tamamen karbon nötr olma çabalarımızın bir parçası olarak,  iPhon14 Pro ve iPhone 14 Pro Max, güç adaptörü veya EarPods ile sunulmamaktadır. Kutuda USB-C güç adaptörleri ve bilgisayar bağlantı noktalarıyla uyumlu, hızlı şarj özelliğini destekleyen bir  USB-C -Lightning Kablosu bulunuyor.  Bu iPhone modelleriyle uyumlu olan mevcut USB-A - Lightning kablolarınızı, güç adaptörlerinizi ve kulaklıklarınızı kullanmaya devam etmenizi öneriyoruz. Ancak yeni bir Apple güç adaptörüne veya kulaklığa ihtiyacınız varsa bu aksesuarları satın alabilirsiniz.",
           "stock": " 50"
         }, {
           "id": 3,
           "name": "iPhone 14 Pro",
           "image": "img4.jpg",
-          "price": 2177.45,
+          "price": 2,
           "description": "2030 yılında tamamen karbon nötr olma çabalarımızın bir parçası olarak,  iPhon14 Pro ve iPhone 14 Pro Max, güç adaptörü veya EarPods ile sunulmamaktadır. Kutuda USB-C güç adaptörleri ve bilgisayar bağlantı noktalarıyla uyumlu, hızlı şarj özelliğini destekleyen bir  USB-C -Lightning Kablosu bulunuyor.  Bu iPhone modelleriyle uyumlu olan mevcut USB-A - Lightning kablolarınızı, güç adaptörlerinizi ve kulaklıklarınızı kullanmaya devam etmenizi öneriyoruz. Ancak yeni bir Apple güç adaptörüne veya kulaklığa ihtiyacınız varsa bu aksesuarları satın alabilirsiniz.",
           "stock": " 50"
         },
@@ -48,14 +48,14 @@
           "id": 5,
           "name": "iPad Air",
           "image": "ipad.png",
-          "price": 2177.45,
+          "price": 2,
           "description": "2030 yılında tamamen karbon nötr olma çabalarımızın bir parçası olarak,  iPhon14 Pro ve iPhone 14 Pro Max, güç adaptörü veya EarPods ile sunulmamaktadır. Kutuda USB-C güç adaptörleri ve bilgisayar bağlantı noktalarıyla uyumlu, hızlı şarj özelliğini destekleyen bir  USB-C -Lightning Kablosu bulunuyor.  Bu iPhone modelleriyle uyumlu olan mevcut USB-A - Lightning kablolarınızı, güç adaptörlerinizi ve kulaklıklarınızı kullanmaya devam etmenizi öneriyoruz. Ancak yeni bir Apple güç adaptörüne veya kulaklığa ihtiyacınız varsa bu aksesuarları satın alabilirsiniz.",
           "stock": " 50"
         }, {
           "id": 6,
           "name": "iPad 9. nesil",
           "image": "img5.jpg",
-          "price": 2177.45,
+          "price": 2,
           "description": "2030 yılında tamamen karbon nötr olma çabalarımızın bir parçası olarak,  iPhon14 Pro ve iPhone 14 Pro Max, güç adaptörü veya EarPods ile sunulmamaktadır. Kutuda USB-C güç adaptörleri ve bilgisayar bağlantı noktalarıyla uyumlu, hızlı şarj özelliğini destekleyen bir  USB-C -Lightning Kablosu bulunuyor.  Bu iPhone modelleriyle uyumlu olan mevcut USB-A - Lightning kablolarınızı, güç adaptörlerinizi ve kulaklıklarınızı kullanmaya devam etmenizi öneriyoruz. Ancak yeni bir Apple güç adaptörüne veya kulaklığa ihtiyacınız varsa bu aksesuarları satın alabilirsiniz.",
           "stock": " 50"
         },
@@ -63,14 +63,14 @@
           "id": 8,
           "name": "MacBook Pro",
           "image": "img1.jpg",
-          "price": 2177.45,
+          "price": 2,
           "description": "2030 yılında tamamen karbon nötr olma çabalarımızın bir parçası olarak,  iPhon14 Pro ve iPhone 14 Pro Max, güç adaptörü veya EarPods ile sunulmamaktadır. Kutuda USB-C güç adaptörleri ve bilgisayar bağlantı noktalarıyla uyumlu, hızlı şarj özelliğini destekleyen bir  USB-C -Lightning Kablosu bulunuyor.  Bu iPhone modelleriyle uyumlu olan mevcut USB-A - Lightning kablolarınızı, güç adaptörlerinizi ve kulaklıklarınızı kullanmaya devam etmenizi öneriyoruz. Ancak yeni bir Apple güç adaptörüne veya kulaklığa ihtiyacınız varsa bu aksesuarları satın alabilirsiniz.",
           "stock": " 50"
         }, {
           "id": 9,
           "name": "14 inç ve 16 inç MacBook Pro",
           "image": "earphones.jpeg",
-          "price": 2177.45,
+          "price": 2,
           "description": "2030 yılında tamamen karbon nötr olma çabalarımızın bir parçası olarak,  iPhon14 Pro ve iPhone 14 Pro Max, güç adaptörü veya EarPods ile sunulmamaktadır. Kutuda USB-C güç adaptörleri ve bilgisayar bağlantı noktalarıyla uyumlu, hızlı şarj özelliğini destekleyen bir  USB-C -Lightning Kablosu bulunuyor.  Bu iPhone modelleriyle uyumlu olan mevcut USB-A - Lightning kablolarınızı, güç adaptörlerinizi ve kulaklıklarınızı kullanmaya devam etmenizi öneriyoruz. Ancak yeni bir Apple güç adaptörüne veya kulaklığa ihtiyacınız varsa bu aksesuarları satın alabilirsiniz.",
           "stock": " 50"
         }

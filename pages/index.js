@@ -16,7 +16,6 @@ export default function Home() {
       <div className={styles.products}>
         <SeeProduct />
       </div>
-        <div>home page</div>
     </div>
   );
 }

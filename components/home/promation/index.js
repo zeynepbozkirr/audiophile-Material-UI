@@ -16,7 +16,8 @@ const PromationArea = () => {
         <SeeProductButton
           id={products.values[0].id}
           buttonTitle={"SEE PRODUCT"}
-          color={"#D97C49"}
+          backcolor={"#D97C49"}
+          color={"white"}
           cardType={"seeProduct"}
         />
       </Grid>

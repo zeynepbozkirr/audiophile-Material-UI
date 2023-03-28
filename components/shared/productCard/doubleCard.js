@@ -2,28 +2,23 @@ import React, { useEffect, useState } from "react";
 import styles from "./productCard.module.css";
 import Grid from "@mui/material/Grid";
 import SeeProductButton from "../button";
-import Image from "next/image";
-import { Img } from "react-image";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProduct } from "../../../store/productSlice";
-import { fetch } from "../../../store/productSlice";
-import { json } from "react-router-dom";
+import PieceButton from "../pieceButton";
 
-const ProductCard = ({
+const DoubleCard = ({
   buttonTitle,
   color,
   id,
-  photoSize,
   position,
-  cardType,
-  amount,
+  type,
+  buttonFunc,
+  count,
+  setCount,
 }) => {
-  const loading = useSelector((state) => state.product.loading);
   const dispatch = useDispatch();
-
   const [state, setSate] = useState();
   const [load, setLoad] = useState(true);
-  console.log(load, "load");
 
   useEffect(() => {
     dispatch(fetchProduct(id))
@@ -47,23 +42,30 @@ const ProductCard = ({
           style={{
             borderRadius: "10px",
           }}
-          src={state[0].image}
-          width={photoSize ? photoSize : 200}
+          src={`../${state[0].image} `}
+          width={200}
         />
       </Grid>
       <Grid md={6} sm={12} className={styles.text} style={{ color: color }}>
         <div className={styles.textName}>{state[0].name}</div>
         <div className={styles.textDesc}>{state[0].description}</div>
-        <SeeProductButton
-          id={id}
-          color={"#D97C49"}
-          cardType={cardType}
-          buttonTitle={buttonTitle}
-          amount={amount}
-        />
+        <div className={styles.orangeButton}>
+          {type == "detail" ? (
+            <PieceButton count={count} setCount={setCount} />
+          ) : null}
+          <SeeProductButton
+            buttonFunc={buttonFunc}
+            count={count}
+            id={id}
+            color={"#D97C49"}
+            type={type}
+            buttonTitle={buttonTitle}
+          />
+        </div>
+        <div> </div>
       </Grid>
     </Grid>
   );
 };
 
-export default ProductCard;
+export default DoubleCard;

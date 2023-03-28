@@ -26,6 +26,12 @@
 }
 .textDesc{
 }
+
+.orangeButton{
+    display: flex;
+    justify-content: space-between;
+
+}
 .button{
     height: 40px;
     width: 150px;
@@ -52,6 +58,7 @@
     display: flex;
     justify-content: center;
     text-align: start;
+
 
 }
 .singlePhoto{
