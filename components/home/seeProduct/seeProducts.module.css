@@ -1,14 +1,13 @@
 .product{
     width: 90%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
 }
 .productItemfirst{
     background: black;
     margin-bottom: 40px;
     border-radius: 10px;
-
 }
 .productItemSecond{
     background: linear-gradient(120deg, rgba(220,220,220,1) 12%,
@@ -25,4 +24,5 @@
 }
 .productItemFourth{
     direction:rtl;
+    margin-top:150px ;
 }

@@ -3,7 +3,6 @@ import Grid from "@mui/material/Grid";
 import styles from "./shop.module.css";
 import { products } from "../../../data.json";
 import ShopCard from "../../shared/shopCard";
-import SeeProduct from "../seeProduct";
 
 const ShopArea = () => {
   return (
@@ -12,18 +11,12 @@ const ShopArea = () => {
         return (
           <Grid
             key={index}
-            md={3.8}
+            md={3.6}
             sm={12}
             xs={12}
             className={styles.shopCard}
           >
-            {index < 3 && (
-              <ShopCard
-                photo={item.image}
-                description={item.name}
-                buttonTitle={"shop"}
-              />
-            )}
+            {index < 3 && <ShopCard id={item.id} buttonTitle={"shop"} />}
           </Grid>
         );
       })}

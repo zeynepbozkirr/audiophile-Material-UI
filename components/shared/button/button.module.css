@@ -1,5 +1,5 @@
 .button{
-    border: 1px solid black;
+    border: 1px solid black !important;
     color: white;
     border-radius: 0;
 }

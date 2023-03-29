@@ -7,6 +7,7 @@ import { fetchProduct } from "../../../store/productSlice";
 import PieceButton from "../pieceButton";
 
 const DoubleCard = ({
+  disableButton,
   buttonTitle,
   color,
   id,
@@ -16,6 +17,7 @@ const DoubleCard = ({
   count,
   setCount,
   backcolor,
+  photoSize,
 }) => {
   const dispatch = useDispatch();
   const [state, setSate] = useState();
@@ -44,7 +46,7 @@ const DoubleCard = ({
             borderRadius: "10px",
           }}
           src={`../${state[0].image} `}
-          width={200}
+          width={photoSize ? photoSize : "200"}
         />
       </Grid>
       <Grid md={6} sm={12} className={styles.text} style={{ color: color }}>
@@ -54,15 +56,17 @@ const DoubleCard = ({
           {type == "detail" ? (
             <PieceButton count={count} setCount={setCount} />
           ) : null}
-          <SeeProductButton
-            buttonFunc={buttonFunc}
-            count={count}
-            id={id}
-            backcolor={backcolor}
-            color={color}
-            type={type}
-            buttonTitle={buttonTitle}
-          />
+          {disableButton ? null : (
+            <SeeProductButton
+              buttonFunc={buttonFunc}
+              count={count}
+              id={id}
+              backcolor={backcolor}
+              color={color}
+              type={type}
+              buttonTitle={buttonTitle}
+            />
+          )}
         </div>
         <div> </div>
       </Grid>

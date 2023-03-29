@@ -42,7 +42,12 @@ const SeeProduct = () => {
       </Grid>
 
       <Grid className={styles.productItemFourth}>
-        <DoubleCard id={products.values[8].id} position={"start"} />
+        <DoubleCard
+          photoSize={"70%"}
+          disableButton={true}
+          id={products.values[8].id}
+          position={"start"}
+        />
       </Grid>
     </Grid>
   );

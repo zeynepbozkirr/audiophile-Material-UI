@@ -1,8 +1,9 @@
 .shop{
-    width: 90%;
+    margin-top:100px ;
+    width: 90% !important;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly !important;
 }
 .text{
     background: #F5F5F7;

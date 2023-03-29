@@ -30,7 +30,7 @@ const FullCard = ({
   ) : (
     <Grid container className={styles.product}>
       <Grid
-        md={6}
+        md={8}
         sm={12}
         className={styles.photo}
         style={{
@@ -45,7 +45,7 @@ const FullCard = ({
           width={photoSize ? photoSize : 200}
         />
       </Grid>
-      <Grid md={6} sm={12} className={styles.text} style={{ color: color }}>
+      <Grid md={4} sm={12} className={styles.text} style={{ color: color }}>
         <div className={styles.textName}>{state[0].name}</div>
         <SeeProductButton
           id={id}

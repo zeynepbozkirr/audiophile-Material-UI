@@ -4,12 +4,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
 .button{
     width: 100px;
-    color: gray;
+    color: gray !important;
     display: flex;
     justify-content: space-evenly;
     text-align: center;
@@ -17,8 +17,6 @@
 }
 .icon{
     margin-bottom: 4px;
-
-
 }
 
 .image{
