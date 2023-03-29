@@ -1,5 +1,5 @@
 .card{
-    background: #F5F5F7;
+    background: #F5F5F7 !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,12 +11,12 @@
     width: 100px;
     color: gray !important;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly !important;
     text-align: center;
-    align-content: space-evenly;
+    align-content: space-evenly !important;
 }
 .icon{
-    margin-bottom: 4px;
+    margin-bottom: 4px !important;
 }
 
 .image{
