@@ -15,6 +15,7 @@ const DoubleCard = ({
   buttonFunc,
   count,
   setCount,
+  backcolor,
 }) => {
   const dispatch = useDispatch();
   const [state, setSate] = useState();
@@ -57,7 +58,8 @@ const DoubleCard = ({
             buttonFunc={buttonFunc}
             count={count}
             id={id}
-            color={"#D97C49"}
+            backcolor={backcolor}
+            color={color}
             type={type}
             buttonTitle={buttonTitle}
           />

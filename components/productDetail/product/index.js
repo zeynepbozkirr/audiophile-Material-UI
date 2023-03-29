@@ -16,6 +16,7 @@ const Product = () => {
   return (
     <div className={styles.product}>
       <DoubleCard
+        backcolor={"#D97C49"}
         count={count}
         setCount={setCount}
         id={id}

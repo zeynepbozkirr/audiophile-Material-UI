@@ -6,7 +6,7 @@ import SeeProductButton from "../button";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProduct } from "../../../store/productSlice";
 
-const SinglePhotoProductCard = ({ color, cardType, id }) => {
+const SinglePhotoProductCard = ({ backcolor, color, cardType, id }) => {
   const dispatch = useDispatch();
 
   const [state, setSate] = useState();
@@ -24,7 +24,7 @@ const SinglePhotoProductCard = ({ color, cardType, id }) => {
     <Grid
       container
       className={styles.singleProduct}
-      style={{ backgroundColor: color }}
+      style={{ backgroundColor: backcolor }}
     >
       <Grid md={6} sm={12} className={styles.singlePhoto}>
         <img src={state[0].image} width="200" />

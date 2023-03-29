@@ -1,12 +1,10 @@
 .promation{
-    width: 90%;
+    width: 90% !important;
     height: 100%;
 }
 .text{
     display: flex;
-    /*align-items: center;*/
-    /*justify-content: space-around;*/
-    flex-direction: column;
+    flex-direction: column !important;
 
 }
 .textName{

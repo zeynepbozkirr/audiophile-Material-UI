@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchProduct } from "../../../store/productSlice";
 const FullCard = ({
   buttonTitle,
+  backcolor,
   color,
   id,
   photoSize,
@@ -48,7 +49,7 @@ const FullCard = ({
         <div className={styles.textName}>{state[0].name}</div>
         <SeeProductButton
           id={id}
-          color={"#D97C49"}
+          color={color}
           cardType={cardType}
           buttonTitle={buttonTitle}
           amount={amount}

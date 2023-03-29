@@ -1,8 +1,8 @@
 .home{
     background: black ;
     color: #fafafa;
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important;
     padding-top: 80px;
     padding-bottom: 80px;
 

@@ -21,7 +21,8 @@ const OrangeButton = ({
         onClick={() => buttonFunc()}
         className={styles.buttonPay}
         style={{
-          background: color,
+          background: backcolor,
+          color: color ? color : "white",
         }}
       >
         {buttonTitle ? buttonTitle : "PRODUCT"}
@@ -31,7 +32,7 @@ const OrangeButton = ({
     <Link href={`/products/${id}`}>
       <Button
         className={styles.button}
-        style={{ background: backcolor, color: color }}
+        style={{ background: backcolor, color: color ? color : "white" }}
       >
         {buttonTitle ? buttonTitle : " SEE PRODUCT"}
       </Button>
