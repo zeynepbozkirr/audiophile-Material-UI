@@ -6,6 +6,7 @@ import SinglePhotoProductCard from "../../shared/productCard/singlePhotoProductC
 import { products } from "../../../data.json";
 import FullCard from "../../shared/productCard/fullCard";
 import SingleProductCard from "../../shared/productCard/singleProductCard";
+import Bringing from "../../shared/bringing";
 
 const SeeProduct = () => {
   return (
@@ -41,14 +42,7 @@ const SeeProduct = () => {
         </Grid>
       </Grid>
 
-      <Grid className={styles.productItemFourth}>
-        <DoubleCard
-          photoSize={"70%"}
-          disableButton={true}
-          id={products.values[8].id}
-          position={"start"}
-        />
-      </Grid>
+      <Bringing />
     </Grid>
   );
 };

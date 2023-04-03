@@ -6,6 +6,7 @@ import PieceButton from "../pieceButton";
 import Grid from "@mui/material/Grid";
 
 const OrangeButton = ({
+  border,
   buttonTitle,
   color,
   id,
@@ -32,7 +33,11 @@ const OrangeButton = ({
     <Link href={`/products/${id}`}>
       <Button
         className={styles.button}
-        style={{ background: backcolor, color: color ? color : "white" }}
+        style={{
+          background: backcolor,
+          color: color ? color : "white",
+          border: border,
+        }}
       >
         {buttonTitle ? buttonTitle : " SEE PRODUCT"}
       </Button>

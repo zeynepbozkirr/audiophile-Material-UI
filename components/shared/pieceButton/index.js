@@ -15,15 +15,15 @@ const PieceButton = ({ count, setCount }) => {
   };
   return (
     <Grid className={styles.button}>
-      <Button className={styles.buttonDec} onClick={() => increment()}>
+      <button className={styles.buttonDec} onClick={() => increment()}>
         -
-      </Button>
+      </button>
       <Button disabled={true} className={styles.buttonDec}>
         {count}
       </Button>
-      <Button className={styles.buttonDec} onClick={() => decrement()}>
+      <button className={styles.buttonDec} onClick={() => decrement()}>
         +
-      </Button>
+      </button>
     </Grid>
   );
 };

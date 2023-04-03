@@ -5,8 +5,12 @@ import SeeProductButton from "../button";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProduct } from "../../../store/productSlice";
 import PieceButton from "../pieceButton";
+import { Typography } from "@mui/material";
 
 const DoubleCard = ({
+  product,
+  direction,
+  photoColor,
   disableButton,
   buttonTitle,
   color,
@@ -38,6 +42,7 @@ const DoubleCard = ({
         sm={12}
         className={styles.photo}
         style={{
+          background: photoColor,
           justifyContent: position ? position : "center",
         }}
       >
@@ -50,24 +55,35 @@ const DoubleCard = ({
         />
       </Grid>
       <Grid md={6} sm={12} className={styles.text} style={{ color: color }}>
-        <div className={styles.textName}>{state[0].name}</div>
-        <div className={styles.textDesc}>{state[0].description}</div>
-        <div className={styles.orangeButton}>
-          {type == "detail" ? (
-            <PieceButton count={count} setCount={setCount} />
-          ) : null}
-          {disableButton ? null : (
-            <SeeProductButton
-              buttonFunc={buttonFunc}
-              count={count}
-              id={id}
-              backcolor={backcolor}
-              color={color}
-              type={type}
-              buttonTitle={buttonTitle}
-            />
-          )}
+        <div
+          className={styles.textName}
+          style={{ textAlign: direction ? direction : "start" }}
+        >
+          <Typography className={styles.newProductText}>{product}</Typography>
+          <Typography className={styles.titleText}>{state[0].name}</Typography>
         </div>
+
+        <div className={styles.textDesc}>{state[0].description}</div>
+        <Grid className={styles.orangeButton} container>
+          <div>
+            {type == "detail" ? (
+              <PieceButton count={count} setCount={setCount} />
+            ) : null}
+          </div>
+          <div>
+            {disableButton ? null : (
+              <SeeProductButton
+                buttonFunc={buttonFunc}
+                count={count}
+                id={id}
+                backcolor={backcolor}
+                color={color}
+                type={type}
+                buttonTitle={buttonTitle}
+              />
+            )}
+          </div>
+        </Grid>
         <div> </div>
       </Grid>
     </Grid>

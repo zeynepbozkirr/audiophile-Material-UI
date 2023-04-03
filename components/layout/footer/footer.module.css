@@ -1,21 +1,25 @@
 .footer{
-    width: 90%;
+    padding-top: 50px;
+    width: 90% !important;
+    height: 300px;
     display: flex;
     background: black;
-    justify-content: center;
+    align-content: space-around;
     color: #fafafa;
+
 }
 
 .productsContainer{
-    /*height: 100px;*/
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
+
 }
 
 .productsTypogTitle{
     font-weight: bold;
-    font-size: 25px;
+    font-size: 17px;
+    display: flex;
 
 }
 
@@ -23,16 +27,23 @@
     display: flex;
     justify-content: space-between;
 }
+.productsNameItem{
+    font-size: 12px;
+}
 
 .descGrid{
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
 }
 .descTypog{
     color: gray;
-    margin-bottom: 30px;
+    font-size: 12px;
 }
 
 .socialMedia{
     display: flex;
+    align-items: end;
     justify-content: end;
     font-size: 20px;
 }
@@ -44,6 +55,10 @@
 }
 
 @media only screen and (max-width: 900px) {
+    .productsContainer{
+        display: flex;
+        align-content:space-between ;
+    }
 .socialMedia{
     justify-content: center;
 }

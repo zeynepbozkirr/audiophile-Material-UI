@@ -10,7 +10,7 @@ import { RightArrow } from "../../icons";
 import { fetchProduct } from "../../../store/productSlice";
 import { useDispatch, useSelector } from "react-redux";
 
-const ShopCard = ({ photo, description, buttonTitle, id }) => {
+const ShopCard = ({ buttonTitle, id }) => {
   const dispatch = useDispatch();
 
   const [state, setSate] = useState();
@@ -29,7 +29,7 @@ const ShopCard = ({ photo, description, buttonTitle, id }) => {
       <CardMedia
         className={styles.image}
         sx={{ height: 140, width: 100 }}
-        image={state[0].image}
+        image={`../${state[0].image}`}
         title="green iguana"
       />
       <CardContent>

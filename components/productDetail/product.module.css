@@ -1,0 +1,21 @@
+.product{
+    width: 90%;
+    height: 100%;
+
+}
+.doubleCardGrid{
+    margin-bottom: 50px;
+}
+.photoGrid{
+    width: 100%;
+    height: 100%;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.alsoGrid{
+    background:white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+    width: 100%;
+}

@@ -1,10 +1,10 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
-import styles from "./shop.module.css";
-import { products } from "../../../data.json";
+import styles from "../../home/shop/shop.module.css";
 import ShopCard from "../../shared/shopCard";
+import { products } from "../../../data.json";
 
-const ShopArea = () => {
+const DetailShop = () => {
   return (
     <Grid className={styles.shop} container spacing={0}>
       {products.values.map((item, index) => {
@@ -24,4 +24,4 @@ const ShopArea = () => {
   );
 };
 
-export default ShopArea;
+export default DetailShop;

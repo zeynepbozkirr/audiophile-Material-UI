@@ -1,8 +1,12 @@
 .button{
     display: flex;
     flex-direction: row;
+    height: 100%;
+    padding-right: 15px;
 }
 .buttonDec{
+    width: 20px;
+    border-radius: 0;
     background: #F5F5F7;
     color: black !important;
     border: white;

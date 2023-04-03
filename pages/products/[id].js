@@ -1,5 +1,5 @@
 import React from "react";
-import Product from "../../components/productDetail/product";
+import Product from "../../components/productDetail";
 import styles from "./productsDetail.module.css";
 import BackButton from "../../components/shared/backButton";
 
