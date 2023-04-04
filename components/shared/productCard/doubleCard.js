@@ -8,6 +8,7 @@ import PieceButton from "../pieceButton";
 import { Typography } from "@mui/material";
 
 const DoubleCard = ({
+  width,
   product,
   direction,
   photoColor,
@@ -57,7 +58,7 @@ const DoubleCard = ({
       <Grid md={6} sm={12} className={styles.text} style={{ color: color }}>
         <div
           className={styles.textName}
-          style={{ textAlign: direction ? direction : "start" }}
+          style={{ textAlign: direction ? direction : "start", width: width }}
         >
           <Typography className={styles.newProductText}>{product}</Typography>
           <Typography className={styles.titleText}>{state[0].name}</Typography>

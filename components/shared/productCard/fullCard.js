@@ -5,6 +5,7 @@ import SeeProductButton from "../button";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProduct } from "../../../store/productSlice";
 const FullCard = ({
+  width,
   buttonTitle,
   backcolor,
   color,
