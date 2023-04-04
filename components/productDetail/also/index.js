@@ -7,12 +7,12 @@ const Also = () => {
   return (
     <Grid className={styles.also} container>
       <Typography className={styles.alsoTitle}> YOU MAY ALSO LIKE</Typography>
-      <Grid container>
+      <Grid container className={styles.alsoCardGrid}>
         {products.values.map((item, index) => {
           return (
             <Grid
               key={index}
-              md={4}
+              md={3.8}
               sm={12}
               xs={12}
               className={styles.alsoCard}
