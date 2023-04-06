@@ -88,7 +88,7 @@ const DoubleCard = ({
           )}
 
           <div>
-            {disableButton && (
+            {!disableButton && (
               <SeeProductButton
                 buttonFunc={buttonFunc}
                 count={count}

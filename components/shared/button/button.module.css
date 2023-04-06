@@ -5,8 +5,8 @@
     border-radius: 0;
 }
 .buttonText{
-    letter-spacing: 1px;
-    font-size: 10px;
+    letter-spacing: 1px !important;
+    font-size: 10px!important;
 }
 .pieceButtonGrid{
     display: flex;
@@ -20,5 +20,5 @@
     width: 100%;
     color: white;
     border-radius: 0;
-    height: 45px;
+    height: 45px !important;
 }

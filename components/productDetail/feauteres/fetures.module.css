@@ -8,7 +8,8 @@
     font-size: 18px !important;
 }
 .content{
-    font-size: 12px;
+
+    font-size: 12px !important;
     color: #969696 !important;
 }
 .boxGrid{
@@ -25,14 +26,14 @@
 }
 .boxContentCount{
     color: #D97C49;
-    font-size: 13px;
-    line-height: 2;
+    font-size: 13px !important;
+    line-height: 2 !important;
     padding-right:20px ;
 
 }
 .boxContentItem{
-    line-height: 2;
-    font-size: 13px;
+    line-height: 2!important;
+    font-size: 13px !important;
     color: #969696 !important;
 }
 @media only screen and (max-width: 900px) {
