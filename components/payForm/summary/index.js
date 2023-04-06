@@ -12,47 +12,57 @@ const Summary = () => {
   return (
     <Grid className={styles.summary}>
       <Card sx={{ maxWidth: 345 }} className={styles.card}>
-        <Typography>SUMMARY</Typography>
+        <Typography className={styles.cardTitle}>SUMMARY</Typography>
         {basketProduct
           ? basketProduct.map((a, index) => {
               return (
                 <Grid key={index} className={styles.productGrid}>
-                  <img
-                    src={a.image}
-                    width={50}
-                    height={50}
-                    className={styles.image}
-                  />
-                  <div>
-                    <Typography>{a.name}</Typography>
-                    <Typography>{a.price}</Typography>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                    }}
+                  >
+                    <img
+                      src={a.image}
+                      width={50}
+                      height={50}
+                      className={styles.image}
+                    />
+                    <div>
+                      <Typography className={styles.title}>{a.name}</Typography>
+                      <Typography className={styles.price}>
+                        $ {a.price}
+                      </Typography>
+                    </div>
                   </div>
 
-                  <Typography>x {a.count}</Typography>
+                  <Typography className={styles.price}>x{a.count}</Typography>
                 </Grid>
               );
             })
           : null}
         <Grid className={styles.payCard}>
-          <Typography>TOTAL</Typography>
+          <Typography className={styles.total}>TOTAL</Typography>
           <Typography className={styles.pieceTypograpy}>
-            ${total == "0" ? 0 : total}
+            $ {total == "0" ? 0 : total}
           </Typography>
         </Grid>
         <Grid className={styles.payCard}>
-          <Typography>SHIPPING</Typography>
+          <Typography className={styles.total}>SHIPPING</Typography>
           <Typography className={styles.pieceTypograpy}>
             $ {total == "0" ? 0 : "50"}
           </Typography>
         </Grid>
         <Grid className={styles.payCard}>
-          <Typography>VAT(INCLUDED)</Typography>
+          <Typography className={styles.total}>VAT(INCLUDED)</Typography>
           <Typography className={styles.pieceTypograpy}>
             $ {total == "0" ? 0 : "1.079"}
           </Typography>
         </Grid>
         <Grid className={styles.payCardGarndTotal}>
-          <Typography>GRAND TOTAL</Typography>
+          <Typography className={styles.total}>GRAND TOTAL</Typography>
           <Typography className={styles.pieceGrandTotal}>
             $ {total == 0 ? 0 : total + 1.079 + 0.5}
           </Typography>
@@ -60,6 +70,7 @@ const Summary = () => {
 
         <Grid className={styles.payCard}>
           <SeeProductButton
+            buttonSize={"100%"}
             buttonFunc={() => console.log("gönderildi")}
             type={"pay"}
             buttonTitle={"CONTINUE & PAY"}

@@ -1,7 +1,12 @@
 .summary{
+    width: 90%;
+    border-radius: 10px;
     background: white;
     display: flex !important;
     justify-content: center !important;
+}
+.cardTitle{
+    font-weight: bold!important;
 }
 .card{
     border: none !important;
@@ -13,17 +18,29 @@
     margin: 30px 0 30px 0;
     display: flex;
     justify-content: space-between;
+    align-items: start;
 }
 .image{
     border-radius: 10px;
+    margin-right: 20px;
 }
-
+.title{
+    font-weight: 600;
+    font-size: 14px !important;
+}
+.price{
+    font-size: 14px !important;
+    color: gray !important;
+}
 .payCard{
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
     color: gray;
 
+}
+.total{
+    font-size: 15px;
 }
 
 .payCardGarndTotal{
@@ -33,8 +50,10 @@
     color: gray;
 }
 .pieceTypograpy{
+    font-weight: bold;
     color:black
 }
 .pieceGrandTotal{
+    font-weight: bold;
     color: #D97C49;
 }

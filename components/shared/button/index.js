@@ -5,6 +5,7 @@ import Link from "next/link";
 import Grid from "@mui/material/Grid";
 
 const OrangeButton = ({
+  buttonSize,
   border,
   buttonTitle,
   color,
@@ -21,7 +22,7 @@ const OrangeButton = ({
         onClick={() => buttonFunc()}
         className={styles.buttonPay}
         style={{
-          width: "160px",
+          width: buttonSize ? buttonSize : "160px",
           background: backcolor,
           color: color ? color : "white",
         }}

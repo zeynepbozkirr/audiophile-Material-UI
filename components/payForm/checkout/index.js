@@ -21,15 +21,15 @@ const CheckOut = () => {
           <Typography className={styles.title}>BILLING DETAILS</Typography>
         </Grid>
         <Grid xs={12} sm={12} md={6} className={styles.grid}>
-          <Typography> Name </Typography>
+          <Typography className={styles.textfTitle}> Name </Typography>
           <TextField className={styles.textField} />
         </Grid>
         <Grid xs={12} sm={12} md={6} className={styles.grid}>
-          <Typography> Email Adress </Typography>
+          <Typography className={styles.textfTitle}> Email Adress </Typography>
           <TextField className={styles.textField} />
         </Grid>
         <Grid xs={12} sm={12} md={6} className={styles.grid}>
-          <Typography> Phone Number </Typography>
+          <Typography className={styles.textfTitle}> Phone Number </Typography>
           <TextField className={styles.textField} />
         </Grid>
       </Grid>
@@ -39,19 +39,19 @@ const CheckOut = () => {
           <Typography className={styles.title}> SHOPPING INFO</Typography>
         </Grid>
         <Grid xs={12} sm={12} md={12} className={styles.grid}>
-          <Typography> Adress </Typography>
+          <Typography className={styles.textfTitle}> Adress </Typography>
           <TextField className={styles.textField} />
         </Grid>
         <Grid xs={12} sm={12} md={6} className={styles.grid}>
-          <Typography> ZP Code</Typography>
+          <Typography className={styles.textfTitle}> ZIP Code</Typography>
           <TextField className={styles.textField} variant="outlined" />
         </Grid>
         <Grid xs={12} sm={12} md={6} className={styles.grid}>
-          <Typography> City </Typography>
+          <Typography className={styles.textfTitle}> City </Typography>
           <TextField className={styles.textField} />
         </Grid>
         <Grid xs={12} sm={12} md={6} className={styles.grid}>
-          <Typography> Country </Typography>
+          <Typography className={styles.textfTitle}> Country </Typography>
           <TextField className={styles.textField} />
         </Grid>
       </Grid>
@@ -60,7 +60,7 @@ const CheckOut = () => {
           <Typography className={styles.title}> PEYMENT DETAILS</Typography>
         </Grid>
         <Grid xs={12} sm={12} md={6} className={styles.grid}>
-          <Typography> Peyment Method </Typography>
+          <Typography className={styles.textfTitle}>Peyment Method</Typography>
         </Grid>
         <Grid xs={12} sm={12} md={6} className={styles.grid}>
           <RadioGroup
@@ -117,12 +117,20 @@ const CheckOut = () => {
           </RadioGroup>
         </Grid>
         <Grid xs={12} sm={12} md={6} className={styles.grid}>
-          <Typography> e-Money Number </Typography>
+          <Typography className={styles.textfTitle}>e-Money Number</Typography>
           <TextField className={styles.textField} />
         </Grid>
         <Grid xs={12} sm={12} md={6} className={styles.grid}>
-          <Typography> e-Money PIN </Typography>
-          <TextField className={styles.textField} classes={styles.textField} />
+          <Typography className={styles.textfTitle}> e-Money PIN </Typography>
+          <TextField
+            className={styles.textField}
+            classes={styles.textField}
+            sx={{
+              input: {
+                color: "gray",
+              },
+            }}
+          />
         </Grid>
       </Grid>
     </Grid>

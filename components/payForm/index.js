@@ -15,7 +15,7 @@ const payForm = () => {
         <Grid md={8} sm={12} xs={12}>
           <Checkout />
         </Grid>
-        <Grid md={3} sm={12} xs={12}>
+        <Grid md={3.7} sm={12} xs={12}>
           <Summary />
         </Grid>
       </Grid>
