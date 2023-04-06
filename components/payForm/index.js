@@ -4,7 +4,6 @@ import styles from "./payForm.module.css";
 import Checkout from "./checkout";
 import Summary from "./summary";
 import BackButton from "../shared/backButton";
-import { Typography } from "@mui/material";
 
 const payForm = () => {
   return (

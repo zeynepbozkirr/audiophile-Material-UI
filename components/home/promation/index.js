@@ -1,10 +1,8 @@
 import React from "react";
 import styles from "./promation.module.css";
 import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
 import { products } from "../../../data.json";
-import { Button, Typography } from "@mui/material";
-import SeeProduct from "../seeProduct";
+import { Typography } from "@mui/material";
 import SeeProductButton from "../../shared/button";
 
 const PromationArea = () => {

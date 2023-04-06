@@ -1,6 +1,5 @@
 import React from "react";
 import { products } from "../../../data.json";
-import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import styles from "./navbar.module.css";
 import { ShoppingCartSvgrepoCom } from "../../icons";

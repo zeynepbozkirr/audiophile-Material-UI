@@ -3,11 +3,8 @@ import Grid from "@mui/material/Grid";
 import styles from "./footer.module.css";
 import Typography from "@mui/material/Typography";
 import { products } from "../../../data.json";
-
 import { Facebook, Instagram, Twitter } from "../../icons";
-import Box from "@mui/material/Box";
 import Link from "next/link";
-import DoubleCard from "../../shared/productCard/doubleCard";
 
 const Footer = () => {
   return (
@@ -43,10 +40,10 @@ const Footer = () => {
         <Grid container className={styles.productsContainer}>
           <Grid md={6} sm={12} xs={12} className={styles.descGrid}>
             <Typography className={styles.descTypog}>
-              Audiophile is an all in one stop to fulfill your audio needs.
-              We're a small team of music lovers and sound specialists who are
+              Audiophile is an all in one stop to fulfill your audio needs. We
+              {"'"}re a small team of music lovers and sound specialists who are
               devoted to helping you get the most out of personal audio. Come
-              and visit our demo facility - we're open 7 days a week.
+              and visit our demo facility - {"'"} open 7 days a week.
             </Typography>
             <Typography className={styles.descTypog2}>
               Copyright 2021.All right reserved

@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-
 import styles from "./alsoCard.module.css";
 import { fetchProduct } from "../../../../store/productSlice";
 import { useDispatch, useSelector } from "react-redux";
