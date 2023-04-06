@@ -74,11 +74,11 @@ const DoubleCard = ({
           <Typography className={styles.newProductText}>{product}</Typography>
           <Typography className={styles.titleText}>{state[0].name}</Typography>
         </Grid>
-        <div className={styles.textDesc}>{state[0].description}</div>{" "}
+        <div className={styles.textDesc}>{state[0].description}</div>
         <div className={styles.textDesc}>
           {type == "detail" && (
             <Typography className={styles.priceText}>
-              $ {state[0].price}{" "}
+              {`$`} {state[0].price}
             </Typography>
           )}
         </div>
