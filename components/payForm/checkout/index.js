@@ -1,23 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./checkout.module.css";
 import {
-  FormControl,
+  createTheme,
   FormControlLabel,
-  FormHelperText,
-  Input,
-  InputLabel,
   Radio,
+  radioClasses,
   RadioGroup,
   TextField,
 } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
+
 const CheckOut = () => {
+  const [checked, setChecked] = useState(true);
+
+  const checkedControl = () => {
+    setChecked(!checked);
+  };
+
   return (
     <Grid className={styles.check} container>
+      <Grid className={styles.checkoutGrid}>
+        <Typography className={styles.checkoutText}> CHECKOUT</Typography>
+      </Grid>
       <Grid className={styles.containergrid} container>
         <Grid xs={12} sm={12} md={12}>
-          <Typography>BILLING DETAILS</Typography>
+          <Typography className={styles.title}>BILLING DETAILS</Typography>
         </Grid>
         <Grid xs={12} sm={12} md={6} className={styles.grid}>
           <Typography> Name </Typography>
@@ -35,7 +43,7 @@ const CheckOut = () => {
 
       <Grid className={styles.containergrid} container>
         <Grid xs={12} sm={12} md={12}>
-          <Typography> SHOPPING INFO</Typography>
+          <Typography className={styles.title}> SHOPPING INFO</Typography>
         </Grid>
         <Grid xs={12} sm={12} md={12} className={styles.grid}>
           <Typography> Adress </Typography>
@@ -56,7 +64,7 @@ const CheckOut = () => {
       </Grid>
       <Grid className={styles.containergrid} container>
         <Grid xs={12} sm={12} md={12}>
-          <Typography> PEYMENT DETAILS</Typography>
+          <Typography className={styles.title}> PEYMENT DETAILS</Typography>
         </Grid>
         <Grid xs={12} sm={12} md={6} className={styles.grid}>
           <Typography> Peyment Method </Typography>
@@ -68,12 +76,48 @@ const CheckOut = () => {
             name="radio-buttons-group"
           >
             <FormControlLabel
-              control={<Radio />}
+              style={{
+                border: `1px solid ${checked ? "#D97C49" : "#d3d3d3"}`,
+                borderRadius: "10px",
+                height: "60px",
+              }}
+              control={
+                <Radio
+                  checked={checked}
+                  onChange={() => checkedControl()}
+                  sx={{
+                    "&": {
+                      color: "#d3d3d3",
+                    },
+                    "&.Mui-checked": {
+                      color: "#D97C49",
+                    },
+                  }}
+                />
+              }
               value="e-Money"
               label="e-Money"
             />
+            <br />
             <FormControlLabel
-              control={<Radio />}
+              style={{
+                border: `1px solid ${checked ? "#d3d3d3" : "#D97C49"}`,
+                borderRadius: "10px",
+                height: "60px",
+              }}
+              control={
+                <Radio
+                  onChange={() => checkedControl()}
+                  sx={{
+                    "&": {
+                      color: "#d3d3d3",
+                    },
+                    "&.Mui-checked": {
+                      color: "#D97C49",
+                    },
+                  }}
+                />
+              }
               value="Cash On Delivery"
               label="Cash On Delivery"
             />
@@ -85,7 +129,7 @@ const CheckOut = () => {
         </Grid>
         <Grid xs={12} sm={12} md={6} className={styles.grid}>
           <Typography> e-Money PIN </Typography>
-          <TextField className={styles.textField} />
+          <TextField className={styles.textField} classes={styles.textField} />
         </Grid>
       </Grid>
     </Grid>

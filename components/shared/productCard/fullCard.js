@@ -5,9 +5,7 @@ import SeeProductButton from "../button";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProduct } from "../../../store/productSlice";
 const FullCard = ({
-  width,
   buttonTitle,
-  backcolor,
   color,
   id,
   photoSize,
@@ -31,7 +29,7 @@ const FullCard = ({
   ) : (
     <Grid container className={styles.product}>
       <Grid
-        md={8}
+        md={6}
         sm={12}
         className={styles.photo}
         style={{
@@ -43,12 +41,13 @@ const FullCard = ({
             borderRadius: "10px",
           }}
           src={state[0].image}
-          width={photoSize ? photoSize : 200}
+          width={200}
         />
       </Grid>
-      <Grid md={4} sm={12} className={styles.text} style={{ color: color }}>
+      <Grid md={6} sm={12} className={styles.text} style={{ color: color }}>
         <div className={styles.textName}>{state[0].name}</div>
         <SeeProductButton
+          border={"1px solid black"}
           id={id}
           color={color}
           cardType={cardType}

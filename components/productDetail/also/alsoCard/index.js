@@ -27,12 +27,7 @@ const AlsoCard = ({ photo, description, buttonTitle, id }) => {
       <div className={styles.cardMedia}>
         <img className={styles.image} src={`../${state[0].image}`} />
       </div>
-      <Typography
-        className={styles.title}
-        gutterBottom
-        variant="h5"
-        component="div"
-      >
+      <Typography className={styles.title} component="div">
         {state[0].name}
       </Typography>
       <OrangeButton

@@ -1,6 +1,7 @@
 import * as React from "react";
 const Svgİnstagram = (props) => (
   <svg
+    fontSize="1.3em"
     width="1em"
     height="1em"
     viewBox="0 0 32 32"

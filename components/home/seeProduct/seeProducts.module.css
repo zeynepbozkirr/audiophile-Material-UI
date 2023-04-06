@@ -5,8 +5,8 @@
     flex-direction: column !important;
 }
 .productItemfirst{
-    background: black;
-    margin-bottom: 40px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 23%, rgba(45,32,54,1) 62%, rgba(0,0,0,1) 100%);    margin-bottom: 40px;
     border-radius: 10px;
 }
 .productItemSecond{

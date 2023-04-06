@@ -51,9 +51,10 @@ const Features = () => {
       </Grid>
 
       <Grid md={6} className={styles.boxGrid}>
-        <Typography className={styles.title}>{inTheBox.title} </Typography>
+        <Grid className={styles.box}>
+          <Typography className={styles.title}>{inTheBox.title} </Typography>
+        </Grid>
         <br />
-
         <Grid className={styles.box}>
           <div>
             {inTheBox.count.map((item, index) => {

@@ -1,21 +1,30 @@
 .promation{
     width: 90% !important;
-    height: 100%;
 }
 .text{
     display: flex;
     flex-direction: column !important;
+}
+.newProductText{
+    color: gray;
+    font-weight: 100  !important;;
+    letter-spacing: 10px  !important;;
+    font-size: 10px  !important;;
+    padding-bottom: 10px  !important;;
 
 }
 .textName{
-    padding-bottom: 80px;
+    padding-bottom: 25px;
     width:80%;
     font-size: 40px;
 }
 
 .textDesc{
-    padding-bottom: 100px;
-    width:80%;
+    color: #969696;
+    padding-bottom: 40px;
+    width:70%;
+    font-size: 14px;
+
 }
 
 

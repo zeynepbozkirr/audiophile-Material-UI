@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import styles from "./button.module.css";
 import Link from "next/link";
 import PieceButton from "../pieceButton";
@@ -22,11 +22,14 @@ const OrangeButton = ({
         onClick={() => buttonFunc()}
         className={styles.buttonPay}
         style={{
+          width: "160px",
           background: backcolor,
           color: color ? color : "white",
         }}
       >
-        {buttonTitle ? buttonTitle : "PRODUCT"}
+        <Typography className={styles.buttonText}>
+          {buttonTitle ? buttonTitle : "PRODUCT"}
+        </Typography>
       </Button>
     </Grid>
   ) : (
@@ -39,7 +42,9 @@ const OrangeButton = ({
           border: border,
         }}
       >
-        {buttonTitle ? buttonTitle : " SEE PRODUCT"}
+        <Typography className={styles.buttonText}>
+          {buttonTitle ? buttonTitle : " SEE PRODUCT"}
+        </Typography>
       </Button>
     </Link>
   );

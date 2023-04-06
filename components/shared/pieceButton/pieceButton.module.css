@@ -5,9 +5,45 @@
     padding-right: 15px !important;
 }
 .buttonDec{
+    width: 30px;
+    border-radius: 0 !important;
+    background: #F5F5F7 !important;
+    color: #bdbbbb !important;
+    border: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.buttonInc{
+    width: 30px;
+    border-radius: 0 !important;
+    background: #F5F5F7 !important;
+    color: #bdbbbb !important;
+    border: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.buttonDecTyp{
+    border-radius: 0 !important;
+    background: #F5F5F7 !important;
+    color: #bdbbbb !important;
+    border: white;
+    display: flex;
+    justify-content: end;
+}
+.buttonDecTypinc{
+    border-radius: 0 !important;
+    color: #bdbbbb !important;
+    border: white;
+    font-size: 12px;
+}
+
+.buttonCount{
     width: 20px;
     border-radius: 0 !important;
     background: #F5F5F7 !important;
     color: black !important;
     border: white;
 }
+

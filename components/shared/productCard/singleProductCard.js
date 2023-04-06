@@ -28,7 +28,12 @@ const SingleProductCard = ({ backcolor, color, cardType, id }) => {
     >
       <Grid md={6} sm={12} className={styles.singleText}>
         <div className={styles.textName}>{state[0].name}</div>
-        <SeeProductButton color={color} cardType={cardType} id={id} />
+        <SeeProductButton
+          border={"1px solid black"}
+          color={color}
+          cardType={cardType}
+          id={id}
+        />
       </Grid>
     </Grid>
   );

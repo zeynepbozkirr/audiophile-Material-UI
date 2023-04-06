@@ -13,13 +13,16 @@ const SeeProduct = () => {
     <Grid container className={styles.product}>
       <Grid className={styles.productItemfirst}>
         <DoubleCard
+          photoSize={200}
+          width={"70%"}
           color={"white"}
-          backcolor={"#D97C49"}
+          backcolor={"#8D5EA9"}
           id={products.values[4].id}
         />
       </Grid>
       <Grid className={styles.productItemSecond}>
         <FullCard
+          photoSize={"100%"}
           backcolor={"#1E1E20"}
           color={"black"}
           id={products.values[5].id}

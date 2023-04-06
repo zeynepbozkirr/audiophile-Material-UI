@@ -1,9 +1,10 @@
 .home{
-    background: black ;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(29,27,27,1) 31%, rgba(0,0,0,1) 47%);
     color: #fafafa;
     display: flex !important;
     justify-content: center !important;
-    padding-top: 80px;
+    padding-top: 120px;
     padding-bottom: 80px;
 
 }
@@ -25,7 +26,6 @@
     display: flex;
     justify-content: center;
     color: black;
-    margin-top: 80px;
     padding-bottom: 80px;
 
 }

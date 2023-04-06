@@ -1,8 +1,8 @@
 .payForm{
-    flex-direction: column;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column !important;
+    width: 90% !important;
+    display: flex !important;
+    justify-content: space-between !important;
     margin-top: 5%;
     margin-bottom: 8%;
 

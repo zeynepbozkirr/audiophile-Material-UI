@@ -4,7 +4,7 @@ import Footer from "./footer";
 
 const Layout = ({ children }) => {
   return (
-    <div style={{}}>
+    <div>
       <Navbar />
 
       <main>{children}</main>

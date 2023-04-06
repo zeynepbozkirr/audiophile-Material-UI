@@ -8,6 +8,7 @@ const Bringing = () => {
   return (
     <Grid className={styles.bringing}>
       <DoubleCard
+        md={5.8}
         width={"70%"}
         direction={"end"}
         photoSize={"100%"}

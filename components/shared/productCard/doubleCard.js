@@ -8,6 +8,7 @@ import PieceButton from "../pieceButton";
 import { Typography } from "@mui/material";
 
 const DoubleCard = ({
+  md,
   width,
   product,
   direction,
@@ -33,14 +34,17 @@ const DoubleCard = ({
       .then((res) => setSate(res.payload))
       .then(() => setLoad(false));
   }, [id]);
+  const toString = <div style={{ color: "red" }}>BEST </div>;
 
+  console.log(toString, "tt");
   return load ? (
     "load"
   ) : (
     <Grid container className={styles.product}>
       <Grid
-        md={6}
+        md={md ? md : 6}
         sm={12}
+        xs={12}
         className={styles.photo}
         style={{
           background: photoColor,
@@ -55,24 +59,36 @@ const DoubleCard = ({
           width={photoSize ? photoSize : "200"}
         />
       </Grid>
-      <Grid md={6} sm={12} className={styles.text} style={{ color: color }}>
-        <div
+      <Grid
+        md={6}
+        sm={12}
+        xs={12}
+        className={styles.text}
+        style={{ color: color }}
+        container
+      >
+        <Grid
           className={styles.textName}
           style={{ textAlign: direction ? direction : "start", width: width }}
         >
           <Typography className={styles.newProductText}>{product}</Typography>
           <Typography className={styles.titleText}>{state[0].name}</Typography>
+        </Grid>
+        <div className={styles.textDesc}>{state[0].description}</div>{" "}
+        <div className={styles.textDesc}>
+          {type == "detail" && (
+            <Typography className={styles.priceText}>
+              $ {state[0].price}{" "}
+            </Typography>
+          )}
         </div>
-
-        <div className={styles.textDesc}>{state[0].description}</div>
         <Grid className={styles.orangeButton} container>
+          {type == "detail" && (
+            <PieceButton count={count} setCount={setCount} />
+          )}
+
           <div>
-            {type == "detail" ? (
-              <PieceButton count={count} setCount={setCount} />
-            ) : null}
-          </div>
-          <div>
-            {disableButton ? null : (
+            {disableButton && (
               <SeeProductButton
                 buttonFunc={buttonFunc}
                 count={count}

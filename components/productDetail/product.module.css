@@ -16,6 +16,12 @@
     background:white;
     display: flex;
     justify-content: center;
-    padding-bottom: 80px;
+    width: 100%;
+}
+.detailShopGrid{
+    background:white;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
     width: 100%;
 }

@@ -8,12 +8,12 @@ import { addBasket } from "../../../store/productSlice";
 const Summary = () => {
   const basketProduct = useSelector((state) => state.product.basketProduct);
   const total = useSelector((state) => state.product.basketProductTotal);
-  // const [total, setTotal] = useState(2);
   return (
     <Grid className={styles.summary}>
       <Card sx={{ maxWidth: 345 }} className={styles.card}>
         <Typography>SUMMARY</Typography>
 
+        
         {basketProduct
           ? basketProduct.map((a, index) => {
               return (
@@ -36,20 +36,27 @@ const Summary = () => {
           : null}
         <Grid className={styles.payCard}>
           <Typography>TOTAL</Typography>
-          <Typography className={styles.pieceTypograpy}>${total}</Typography>
+          <Typography className={styles.pieceTypograpy}>
+            ${total == "0" ? 0 : "0"}
+          </Typography>
         </Grid>
         <Grid className={styles.payCard}>
           <Typography>SHIPPING</Typography>
-          <Typography className={styles.pieceTypograpy}>$ 50</Typography>
+          <Typography className={styles.pieceTypograpy}>
+            $ {total == "0" ? 0 : "50"}
+          </Typography>
         </Grid>
         <Grid className={styles.payCard}>
           <Typography>VAT(INCLUDED)</Typography>
-          <Typography className={styles.pieceTypograpy}>$1.079</Typography>
+          <Typography className={styles.pieceTypograpy}>
+            {" "}
+            $ {total == "0" ? 0 : "1.079"}
+          </Typography>
         </Grid>
         <Grid className={styles.payCardGarndTotal}>
           <Typography>GRAND TOTAL</Typography>
           <Typography className={styles.pieceGrandTotal}>
-            $ {total + 1.079 + 0.5}
+            $ {total == 0 ? 0 : total + 1.079 + 0.5}
           </Typography>
         </Grid>
 
@@ -58,7 +65,7 @@ const Summary = () => {
             buttonFunc={() => console.log("gönderildi")}
             type={"pay"}
             buttonTitle={"CONTINUE & PAY"}
-            color={" #D97C49"}
+            backcolor={" #D97C49"}
           />
         </Grid>
       </Card>

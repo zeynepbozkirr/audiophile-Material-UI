@@ -5,18 +5,28 @@
     align-items: center;
     justify-content: center;
     box-shadow: none !important;
+    padding-bottom: 20px;
 }
-
+.title{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
 .button{
-    width: 100px;
+    width: 90px;
     color: gray !important;
     display: flex;
     justify-content: space-evenly !important;
     text-align: center;
     align-content: space-evenly !important;
 }
+.buttontext{
+    font-size: 12px;
+    letter-spacing: 1.2px;
+}
 .icon{
-    margin-bottom: 4px !important;
+    font-weight: bold!important;
+    font-size: 11px;
+    margin-bottom: 2px !important;
 }
 
 .image{

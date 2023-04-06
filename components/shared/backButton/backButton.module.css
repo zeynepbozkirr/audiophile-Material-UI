@@ -1,14 +1,14 @@
 .backButton{
-    width: 90%;
+    width: 90% !important;
 }
 .button{
-    color: black;
-    padding-left: 0;
-    font-weight: 200;
-    font-size: 13px;
-    text-transform: none;
+    color: black !important;
+    padding-left: 0 !important;
+    font-weight: 200 !important;
+    font-size: 13px !important;
+    text-transform: none !important;
 }
 
 .button:hover{
-    background: none;
+    background: none !important;
 }

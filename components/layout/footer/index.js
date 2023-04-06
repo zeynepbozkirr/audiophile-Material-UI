@@ -15,17 +15,19 @@ const Footer = () => {
       style={{
         background: "black",
         display: "flex",
-        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
       }}
     >
+      <Grid className={styles.lineGrid}>
+        <div className={styles.line}></div>
+      </Grid>
       <Grid container className={styles.footer}>
         <Grid container className={styles.productsContainer}>
           <Grid md={6} sm={12} xs={12} className={styles.productsTitle}>
-            <Typography className={styles.productsTypogTitle}>
-              audiophile
-            </Typography>
+            <Typography>audiophile</Typography>
           </Grid>
-          <Grid md={4} sm={12} xs={12} className={styles.productsName}>
+          <Grid md={4} sm={6} xs={12} className={styles.productsName}>
             {products.name.map((item, index) => {
               return (
                 <Link key={index} href={"/#"}>
@@ -41,12 +43,13 @@ const Footer = () => {
         <Grid container className={styles.productsContainer}>
           <Grid md={6} sm={12} xs={12} className={styles.descGrid}>
             <Typography className={styles.descTypog}>
-              2030 yılında tamamen karbon nötr olma çabalarımızın bir parçası
-              olarak, iPhon14 Pro ve iPhone 14 Pro Max, olarak, iPhon14 Pro ve
-              iPhone 14 Pro Max, olarak, iPhon14 Pro ve iPhone 14 Pro Max, 2030
-              yılında tamamen karbon nötr olma çabalarımızın bir parçası olarak,
-              iPhon14 Pro ve iPhone 14 Pro Max, olarak, iPhon14 Pro ve iPhone 14
-              Pro Max, olarak, iPhon14 Pro ve iPhone 14 Pro Max, 2030 yılında
+              Audiophile is an all in one stop to fulfill your audio needs.
+              We're a small team of music lovers and sound specialists who are
+              devoted to helping you get the most out of personal audio. Come
+              and visit our demo facility - we're open 7 days a week.
+            </Typography>
+            <Typography className={styles.descTypog2}>
+              Copyright 2021.All right reserved
             </Typography>
           </Grid>
 
@@ -54,15 +57,10 @@ const Footer = () => {
             <Facebook style={{ background: "white", marginRight: "15px" }} />
             <Twitter
               fill="white"
-              style={{ color: "white", marginRight: "15px" }}
+              style={{ color: "white", marginRight: "12px" }}
             />
             <Instagram fill="white" />
           </Grid>
-        </Grid>
-        <Grid container className={styles.productsContainer}>
-          <Typography className={styles.descTypog}>
-            Copyright 2021.All right reserved
-          </Typography>
         </Grid>
       </Grid>
     </div>

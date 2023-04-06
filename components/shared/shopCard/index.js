@@ -28,21 +28,17 @@ const ShopCard = ({ buttonTitle, id }) => {
     <Card className={styles.card}>
       <CardMedia
         className={styles.image}
-        sx={{ height: 140, width: 100 }}
+        sx={{ height: 140, width: 140 }}
         image={`../${state[0].image}`}
         title="green iguana"
       />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {state[0].name}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button className={styles.button}>
-          <Typography> {buttonTitle}</Typography>
-          <RightArrow className={styles.icon} fill="#D97C49" />
-        </Button>
-      </CardActions>
+      <Typography className={styles.title} gutterBottom component="div">
+        {state[0].name}
+      </Typography>
+      <Button className={styles.button}>
+        <Typography className={styles.buttontext}> {buttonTitle}</Typography>
+        <RightArrow className={styles.icon} fill="#D97C49" />
+      </Button>
     </Card>
   );
 };

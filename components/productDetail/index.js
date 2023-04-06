@@ -23,6 +23,7 @@ const Product = () => {
     <Grid className={styles.product} container>
       <div className={styles.doubleCardGrid}>
         <DoubleCard
+          width={"70%"}
           product={"NEW PRODUCT"}
           photoColor={"#F5F5F7"}
           backcolor={"#D97C49"}
@@ -45,7 +46,7 @@ const Product = () => {
       <div className={styles.alsoGrid}>
         <Also />
       </div>
-      <div className={styles.alsoGrid}>
+      <div className={styles.detailShopGrid}>
         <DetailShop />
       </div>
       <Bringing />
