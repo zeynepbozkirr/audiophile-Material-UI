@@ -20,7 +20,6 @@ const ShopCard = ({ buttonTitle, id }) => {
       .then((res) => setSate(res.payload))
       .then(() => setLoad(false));
   }, [id]);
-  console.log(state, "sss");
 
   return load ? (
     "load"

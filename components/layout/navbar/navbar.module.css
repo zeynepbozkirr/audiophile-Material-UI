@@ -32,8 +32,21 @@
     justify-content: end;
     font-size:18px !important;
 }
+.basketTotal{
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 900;
+    position:absolute;
+    margin-right: -13px ;
+    margin-top: -8px ;
+    border: solid #D97C49;
+    border-radius: 90%;
+    height: 15px;
+    width: 15px;
+    background: #D97C49;
+}
 .navbarGrid{
-    /*width: 100%;*/
     display: flex;
     justify-content: space-evenly;
     align-content: space-evenly;
@@ -47,7 +60,10 @@
 
 }
 @media only screen and (max-width: 600px) {
-
+       .basketTotal{
+           margin-left: 17px ;
+           margin-top: -7px ;
+         }
     .shoppingCard{
         display: flex;
         justify-content: start;

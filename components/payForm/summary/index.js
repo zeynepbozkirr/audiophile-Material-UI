@@ -8,12 +8,11 @@ import { addBasket } from "../../../store/productSlice";
 const Summary = () => {
   const basketProduct = useSelector((state) => state.product.basketProduct);
   const total = useSelector((state) => state.product.basketProductTotal);
+
   return (
     <Grid className={styles.summary}>
       <Card sx={{ maxWidth: 345 }} className={styles.card}>
         <Typography>SUMMARY</Typography>
-
-        
         {basketProduct
           ? basketProduct.map((a, index) => {
               return (
@@ -37,7 +36,7 @@ const Summary = () => {
         <Grid className={styles.payCard}>
           <Typography>TOTAL</Typography>
           <Typography className={styles.pieceTypograpy}>
-            ${total == "0" ? 0 : "0"}
+            ${total == "0" ? 0 : total}
           </Typography>
         </Grid>
         <Grid className={styles.payCard}>
@@ -49,7 +48,6 @@ const Summary = () => {
         <Grid className={styles.payCard}>
           <Typography>VAT(INCLUDED)</Typography>
           <Typography className={styles.pieceTypograpy}>
-            {" "}
             $ {total == "0" ? 0 : "1.079"}
           </Typography>
         </Grid>

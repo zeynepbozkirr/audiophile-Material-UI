@@ -1,7 +1,8 @@
 .button{
+    width: 140px;
+    height: 45px;
     display: flex !important;
     flex-direction: row !important;
-    height: 100% !important;
     padding-right: 15px !important;
 }
 .buttonDec{

@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import styles from "./product.module.css";
 import DoubleCard from "../shared/productCard/doubleCard";
 import { useDispatch, useSelector } from "react-redux";
-import { addBasket } from "../../store/productSlice";
+import { addBasket, fetchProduct } from "../../store/productSlice";
 import Feauteres from "./feauteres";
 import { Grid } from "@mui/material";
 import DetailPhoto from "./detailPhoto";
@@ -15,7 +15,6 @@ const Product = () => {
   const router = useRouter();
   const { id } = router.query;
 
-  const basketProduct = useSelector((state) => state.product.basketProduct);
   const dispatch = useDispatch();
   const [count, setCount] = useState(0);
 
@@ -33,7 +32,10 @@ const Product = () => {
           photoSize={100}
           type={"detail"}
           buttonTitle={"add to card"}
-          buttonFunc={() => dispatch(addBasket({ id: id, count: count }))}
+          buttonFunc={() => {
+            dispatch(addBasket({ id: id, count: count }));
+            setCount(0);
+          }}
         />
       </div>
       <div>

@@ -30,13 +30,14 @@ const DoubleCard = ({
   const [load, setLoad] = useState(true);
 
   useEffect(() => {
-    dispatch(fetchProduct(id))
-      .then((res) => setSate(res.payload))
-      .then(() => setLoad(false));
+    if (id) {
+      dispatch(fetchProduct(id))
+        .then((res) => setSate(res.payload))
+        .then(() => setLoad(false));
+    }
   }, [id]);
   const toString = <div style={{ color: "red" }}>BEST </div>;
 
-  console.log(toString, "tt");
   return load ? (
     "load"
   ) : (

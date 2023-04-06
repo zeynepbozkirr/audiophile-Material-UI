@@ -2,7 +2,6 @@ import React from "react";
 import { Button, Typography } from "@mui/material";
 import styles from "./button.module.css";
 import Link from "next/link";
-import PieceButton from "../pieceButton";
 import Grid from "@mui/material/Grid";
 
 const OrangeButton = ({

@@ -5,8 +5,11 @@ import styles from "./navbar.module.css";
 import { ShoppingCartSvgrepoCom } from "../../icons";
 import Link from "next/link";
 import { Typography } from "@mui/material";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+  const total = useSelector((state) => state.product.totalCount);
+
   return (
     <div className={styles.navbarDiv}>
       <Grid className={styles.navbar} container>
@@ -27,8 +30,9 @@ const Navbar = () => {
         </Grid>
 
         <Grid md={4} sm={6} xs={12} className={styles.shoppingCard}>
-          <Link href={"/pay"}>
+          <Link href={"/pay"} className={styles.shoppingCard}>
             <ShoppingCartSvgrepoCom fill="white" />
+            {total != 0 && <div className={styles.basketTotal}>{total}</div>}
           </Link>
         </Grid>
       </Grid>

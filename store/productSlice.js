@@ -4,6 +4,7 @@ import { products } from "../data.json";
 const initialState = {
   basketProduct: [],
   basketProductTotal: 0,
+  totalCount: 0,
 };
 export const fetchProduct = createAsyncThunk(
   "fetchProduct",
@@ -26,12 +27,13 @@ export const productSlice = createSlice({
         const item = state.basketProduct.find((x) => x.id == action.payload.id);
         item.count += action.payload.count;
         state.basketProductTotal += obj2.count * obj2.price;
+        state.totalCount += obj2.count;
       } else {
         // convert array to object
         // count objesini obj objesi ile birleştirme
         state.basketProduct.push(obj2);
-        console.log(state.basketProductTotal, "bas");
         state.basketProductTotal += obj2.count * obj2.price;
+        state.totalCount += obj2.count;
       }
     },
   },
