@@ -11,26 +11,26 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: solid 0.01px #5b5959;
-    width: 90%;
+    width: 90% !important;
 }
 .logo{
-    letter-spacing: 1.3px;
+    letter-spacing: 1.3px!important;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 18px !important;
 }
 .itemGrid{
     display: flex;
     justify-content: space-between;
 }
 .navbarItem{
-    letter-spacing: 1.3px;
-    font-size: 11px;
+    letter-spacing: 1.3px !important;
+    font-size: 11px  !important;
 
 }
 .shoppingCard{
     display: flex;
     justify-content: end;
-    font-size:18px;
+    font-size:18px !important;
 }
 .navbarGrid{
     /*width: 100%;*/
